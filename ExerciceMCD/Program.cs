@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Exercise_DB.Classes;
+﻿using Exercise_DB.Classes;
 
 #region Initialisation des variables
 List<Client> ClientList = new List<Client>();
@@ -10,47 +8,52 @@ List<Photocopier> PhotocopierList = new List<Photocopier>();
 bool exit = false;
 #endregion
 
-while (!exit)
+#region choixInupt
+void displayProg()
 {
-    ShowMenu();
-    int choice = ReadNumericInput(1, 7);
-
-    switch (choice)
+    while (!exit)
     {
-        case 1:
-            CreateClient();
-            break;
-        case 2:
-            CreateTechnician();
-            break;
-        case 3:
-            CreatePhotocopier();
-            break;
-        case 4:
-            DisplayListClient();
-            break;
-        case 5:
-            DisplayListTech();
-            break;
-        case 6:
-            DisplayListPhoto();
-            break;
-        case 7:
-            exit = true;
-            Console.WriteLine("Exit...");
-            break;
-        default:
-            Console.WriteLine("Option non valide. Veuillez réessayer.");
-            break;
-    }
+        ShowMenu();
+        int choice = ReadNumericInput(1, 7);
 
-    if (!exit)
-    {
-        Console.WriteLine("\nPressez une touche pour continuer...");
-        Console.ReadKey();
-        Console.Clear();
+        switch (choice)
+        {
+            case 1:
+                CreateClient();
+                break;
+            case 2:
+                CreateTechnician();
+                break;
+            case 3:
+                CreatePhotocopier();
+                break;
+            case 4:
+                DisplayListClient();
+                break;
+            case 5:
+                DisplayListTech();
+                break;
+            case 6:
+                DisplayListPhoto();
+                break;
+            case 7:
+                exit = true;
+                Console.WriteLine("Exit...");
+                break;
+            default:
+                Console.WriteLine("Option non valide. Veuillez réessayer.");
+                break;
+        }
+
+        if (!exit)
+        {
+            Console.WriteLine("\nPressez une touche pour continuer...");
+            Console.ReadKey();
+            Console.Clear();
+        }
     }
 }
+#endregion
 
 #region Menu des choix
 static void ShowMenu()
@@ -88,7 +91,7 @@ static int ReadNumericInput(int min, int max)
         Console.Write($"Your choice ({min}-{max}) : ");
         input = Console.ReadLine();
 
-        // Verify if the input is empty or only space
+        // Verifie si l'input est null
         if (string.IsNullOrWhiteSpace(input))
         {
             Console.WriteLine("The input cannot be empty");
@@ -96,7 +99,7 @@ static int ReadNumericInput(int min, int max)
             continue;
         }
 
-        // Try to convert to int
+        // Essaye de convertir l'input en int
         if (!int.TryParse(input, out result))
         {
             Console.WriteLine("Input a valid number");
@@ -104,7 +107,7 @@ static int ReadNumericInput(int min, int max)
             continue;
         }
 
-        // Verify if number is in the valid range
+        // Verifie que l'input est comprise entre les valeurs min et max
         if (result < min || result > max)
         {
             Console.WriteLine($"The input must be between {min} and {max}.");
@@ -243,3 +246,5 @@ void DisplayListPhoto()
     }
 }
 #endregion
+
+displayProg();
