@@ -1,0 +1,14 @@
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\bin\Debug\net8.0\ExerciceMCD.exe
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\bin\Debug\net8.0\ExerciceMCD.deps.json
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\bin\Debug\net8.0\ExerciceMCD.runtimeconfig.json
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\bin\Debug\net8.0\ExerciceMCD.dll
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\bin\Debug\net8.0\ExerciceMCD.pdb
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.AssemblyInfo.cs
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.dll
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\refint\ExerciceMCD.dll
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.pdb
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ExerciceMCD.genruntimeconfig.cache
+C:\Users\Utilisateur\source\repos\ExerciceMCD\ExerciceMCD\obj\Debug\net8.0\ref\ExerciceMCD.dll
